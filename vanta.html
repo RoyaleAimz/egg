@@ -2,53 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanta Script - VantaScripts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VantaScripts</title>
   <style>
     body {
-      background-color: #0f0f0f;
-      color: white;
-      font-family: sans-serif;
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    .price {
-      font-size: 1.3em;
-      color: #ffd700;
-      margin-bottom: 20px;
-    }
-    .features {
-      list-style: none;
+      margin: 0;
       padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
     }
-    .features li::before {
-      content: "✔️";
-      margin-right: 8px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #121212;
     }
-    a {
-      color: #66ccff;
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .logo span {
+      color: #7f5af0;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    .cta-button {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #7f5af0;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #9775f9;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .top-right-logo {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+    .top-right-logo img {
+      height: 50px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Vanta Script for Rust</h1>
-    <p class="price">From $9.95</p>
-    <h2>Features:</h2>
-    <ul class="features">
-      <li>Undetected bypass</li>
-      <li>Mouse movement and recoil smoothing</li>
-      <li>Configurable settings</li>
-      <li>Works on all resolutions</li>
-    </ul>
-    <p><a href="scripts.html">← Back to All Scripts</a></p>
+  <div class="header">
+    <div class="logo">Vanta<span>Scripts</span></div>
+    <div class="top-right-logo">
+      <img src="https://vantascripts.xyz/logo.png" alt="Logo" />
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>The Best Selling Script for Rust</h1>
+    <p>Never detected. Trusted by thousands. The safest option on the market.</p>
+    <a href="scripts.html">
+      <button class="cta-button">View Our Script</button>
+    </a>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 VantaScripts. All rights reserved.
   </div>
 </body>
 </html>
